@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+vffffffffffffffffffffff
+vfvf
+
+<div class="aa"><%=title %></div>
+
+<button id="btn">按钮</button>
+<script>
+    $("#btn").on("click",function () {
+        var param = {
+            "aaa":22
+        }
+        $.ajax({
+            url: "https://192.168.119.65:3004/query",
+            data:param,
+            type: "get",
+            success: function (msg) {
+                console.log("success")
+                console.log(msg)
+            },
+            error: function (error) {
+                console.log(344)
+                console.log(error)
+            }
+        })
+    })
+</script>
+</body>
+</html>
