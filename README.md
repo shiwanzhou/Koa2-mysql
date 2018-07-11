@@ -14,6 +14,7 @@ node+koa2+mysql
 启动步骤：
   npm install
   npm run dev
+
 单元测试：
   npm run test(测试项目)
 
